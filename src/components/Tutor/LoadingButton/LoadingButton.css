@@ -1,0 +1,35 @@
+.loading-btn {
+    background: #6255a4 !important;
+    color: white !important;
+    padding: 10px 45px 10px 45px !important;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+        background-color: #2b92f7;
+    }
+
+    .spinner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            width: 19px;
+            margin-right: 10px;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .txt {
+        flex-grow: 1;
+    }
+}
